@@ -199,3 +199,28 @@ func VariableSizeValidator(val string) error {
 
 	return nil
 }
+
+
+/*  Imports:
+The code brings in various packages to help with different tasks. It's like assembling a team of experts with unique skills to assist in our work.
+We have some trusted members from the standard Go library like "fmt," "errors," and "strings."
+Additionally, we've invited external experts like "github.com/asaskevich/govalidator."
+We've also got some special members from our own "github.com/taubyte/tau-cli/common" and "github.com/taubyte/tau-cli/constants" repositories who provide essential tools and constants for our validation functions.
+
+Validation Functions:
+We've prepared a set of validators, each with a specific job to ensure that the data we work with meets certain rules and standards.
+For example, the "VariableNameValidator" makes sure that variable names are both valid according to a regular pattern and fall within an acceptable length.
+The "VariableDescriptionValidator" checks the length of variable descriptions to ensure they are not too long.
+We also have a placeholder, "VariableTagsValidator," waiting for specific validation rules to be added in the future.
+These validators act as guardians to our data, making sure it's in good shape.
+
+Error Handling:
+If any of these validators discover that the data doesn't meet the rules, they don't panic; they simply raise their hand and say, "I found a problem!" They do this by returning an error message that helps us understand what went wrong.
+This way, if something doesn't match our expectations, we know exactly why.
+
+Constants and Helper Functions:
+To help with these validations, we have constants and helper functions. Think of them as reference materials or tools that the validators use to check things.
+For instance, if we need to know what an acceptable size unit is, we can consult our "common.SizeUnitTypes" reference.
+Or, when we need to check if a Fully Qualified Domain Name (FQDN) is valid, we have a function from an external expert package, "govalidator.IsDNSName," to assist us.
+In a nutshell, this code represents a team effort to ensure that our data is checked, validated, and maintained according to specific rules and standards, with clear error messages to guide us when something goes wrong.
+*/
